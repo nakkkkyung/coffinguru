@@ -1,0 +1,453 @@
+@charset "utf-8";
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .close_btn,.menu_btn{display: block;}
+    .icon{text-indent: -9000px;}
+    .gnb_wrap{
+        width: 100%;
+        height: 100%;
+        background: #82426C;
+        z-index: 1;
+        display: none;
+        /* right: 0px; */
+    }
+    .gnb_wrap h1{
+        position: absolute;
+        top: 15px;
+        right: 50%;
+        width: 60px;
+    }
+    .gnb>ul{
+        margin-top: 120px;
+    }
+    .gnb>ul>li>a{
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    .gnb ul{margin-left: 20px;}
+    .gnb ul li{
+        margin: 50px 0px;
+    }
+    .gnb ul li a{
+        color: #fff;
+    }
+    .sub{display: none;}
+    .sub li a{font-size: 1rem;}
+    .gnb_wrap h1 img{width: 100%;}
+    header .btn-language{display: none;}
+    .menu_btn, .close_btn{
+        position: absolute;
+        font-size: 40px;
+        right: 30px;
+        top: 15px;
+        color: #fff;
+        z-index: 2;
+    }
+    .close_btn{
+        position: absolute;
+        left: 30px;
+    }
+    #toggle:checked+.gnb_wrap{
+        display: block;
+    }
+
+    .gnb_bottom{
+        display: block;
+        font-size: 1rem;
+        margin-left: 40px;
+        border-top: 1px solid #000;
+        padding: 40px 0px 60px 0px;
+    }
+    .gnb_bottom li{
+        line-height: 50px;  
+    }
+    .gnb_bottom li a, .sns i{
+        color: #fff;
+    }
+    .sns{margin-top: 20px;}
+    .sns i{font-size: 40px;
+        }
+    /* .icon i{display: none;} */
+    .m_slide{
+    height: 950px;}
+    .m_slide img{
+        height: 950px;}
+    .m_slide>h2{display: none;}
+
+
+    .m_first {
+        width: 100%;
+        height: 600px;
+        position: relative;
+    }
+    .m_first article{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        position: absolute;
+        top:150px;
+    }
+    .m_first h2{display: none;}
+    .m_first h3{
+        text-align: center;
+        font-size: 23px;}
+    .m_first p{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 18px;}
+    .m_first i{font-size: 25px;}
+    .pupple{
+        width: 300px;
+    }
+    .pupple img{
+        width: 100%;
+        padding-top: 20px;}
+
+    .i_first{
+        position: absolute;
+        left: 28%;
+        top: 0px;
+    }
+    .i_second{
+        position: absolute;
+        left: 65%;
+        top: 0;
+    }
+    .i_third{
+        position: absolute;
+        top: 0;
+        right: 30%;
+    }
+    .move{
+        width: 600px;
+        margin: 0 auto;
+        position: relative;
+        right: 100px;
+    }
+    .move ul li{
+        display: block;
+        width: 500px;
+        padding: 15px 10px 15px 0px;
+    }
+    .move ul li a{
+        font-size: 20px;
+    }
+   .m_last{
+    position: relative;}
+   .m_last article{
+    margin: 0px;
+    position: absolute;
+    left: 150px;
+    
+   }
+   .m_last h2{
+    font-size: 13px;
+   }
+   .social{
+    position: absolute;
+    top: -20px;}
+   .f_nav a{font-size: 20px;}
+   
+
+    /*메뉴스토리*/
+    .menu_story{
+        width: 100%;
+        height: 100vh;
+        background:#ccc;
+    }
+    .menu_txt{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 80px;
+    }
+    .menu_txt h2{
+        font-size: 55px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .menu_txt label{
+        font-size: 25px;
+        text-transform: uppercase;
+        padding: 0 2%;
+        background: green;
+    }
+    .menu_txt label:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .menu_txt ul{
+        margin-top: 100px;
+        width: 100%;
+        height: 300px;
+    }
+    .menu_txt ul img{
+        width: 100%;
+    }
+    .menu_txt .coffee{
+        background: yellow;
+    }
+    .menu_txt .dessert{
+        background: blue;
+    }
+    .menu_txt .deli{
+        background: purple;
+    }
+    .menu_txt .wine{
+        background: green;
+    }
+    .menu_txt .c_slide{
+        display: none;
+    }
+    #tab01:checked~.coffee{display: block; display: flex;}
+    #tab02:checked~.dessert{display: block; display: flex;}
+    #tab03:checked~.deli{display: block; display: flex;}
+    #tab04:checked~.wine{display: block; display: flex;}
+
+    /*프랜차이즈*/
+    .franchise{
+        height: 970px;
+        background: rgba(204, 204, 204,.5);
+        position: relative;
+        overflow: hidden;
+    }
+    .franchise dl dt{
+        display: inline-flex;
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        top: 20px;
+        left: 105px;
+        width: auto;
+        height: 32px;
+        border: 1px solid transparent;
+        border-radius: 32px;
+        border-bottom-left-radius: 0;
+        padding: 0 16px;
+        background-color: #d50037ad;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1;
+        white-space: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .franchise .name{
+        width: 200px;
+        color: #fff;
+    }
+    .franchise dl dd img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .franchise dl dt{
+        color: #fff;
+    }
+
+
+    .franchise>article{
+        width: 80%;
+        height: 780px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .franchise article .f_wrap{
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+        top: 250px;
+        z-index: 2;
+    }
+    .franchise h2{
+        font-size: 3.9rem;
+        text-align: center;
+        margin-bottom: 70px;
+        
+    }
+    .franchise p{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .franchise .f_first{
+        font-size: 20px;
+        line-height: 30px;}
+    .franchise .f_last{
+        font-size: 18px; 
+        margin-bottom: 50px;
+        line-height: 30px;}
+    .move ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .move ul li{
+        width: 400px;
+        font-size: 23px;
+        border: 1px solid #000;
+        width: 200px;
+        padding: 15px 25px 15px 5px;
+        position: relative;
+        display: inline-block;
+    }
+    .ani_back{
+        background-color: yellow;
+        position: absolute;
+        top: 0;left: 0px;
+        width: 3840px;
+
+    }
+    .ani_back > div{
+        position: absolute;
+        z-index: 1;
+    }
+    .name1{
+        top:60px;left: 200px;
+        animation: name1 10s infinite;
+    }
+    .name2{
+        top:600px;left: 1400px;
+        animation: name2 10s infinite;
+    }
+    .name3{
+        top:100px;left: 2120px;
+        animation: name3 10s infinite;
+    }
+    .name4{
+        top:600px;left: 4320px;
+        animation: name4 10s infinite;
+    }
+    @keyframes name1{
+        0%{left:200px;}
+        100%{left: -1920px;}
+    }
+    @keyframes name2{
+        0%{left:1400px;}
+        100%{left: -520px;}
+    }
+    @keyframes name3{
+        0%{left:2120px;}
+        100%{left: -1400px;}
+    }
+    @keyframes name4{
+        0%{left:4320px;}
+        100%{left: 0px;}
+    }
+    .btn-grad {
+        background: #Fff;
+        margin: 10px;
+        padding: 15px 100px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        display: block;
+        }
+
+    .btn-grad:hover{
+        background-position: right center; 
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+        background: #000;
+        }
+    .btn-grad:hover a{
+        color: #fff;
+    }
+    .fa-solid{
+        position: absolute;
+        right: 10px;
+    }
+    
+    /*사회공헌,recruit,thema menu*/
+    .m_last{
+        height: 780px;
+        position: relative;
+    }
+    .m_last article{
+        width: 68%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        position: absolute;
+        top: 20%;
+        left: 16%;
+    }
+    .m_last article>h2{display: none;}
+    .m_last article img{
+        width: 200px;
+        height: 200px;
+    }
+    .m_last article h2{font-size: 40px;}
+    .m_last article .s_title{margin:20px;}
+    .m_last article .r_title{margin: 20px 50px 30px 55px;}
+    .m_last article .t_title{margin: 20px 20px 20px 30px; }
+    .m_last article p{font-size: 20px;line-height: 30px;
+    margin-top: 30px;
+    }
+
+    .m_last .social{position: relative;
+    top:20px;right: 5%;}
+    .m_last .social .s_title:hover{
+        text-decoration: underline;
+    }
+    .m_last .recruit{position: relative;
+        top:20px;}
+    .m_last .recruit .r_title:hover{
+        text-decoration: underline;
+    }
+    .recruit p{
+        left: 20%;
+    }
+    .m_last .thema_menu{position: relative;
+        top:20px;left: 5%;}
+    .m_last .thema_menu .t_title:hover{
+        text-decoration: underline;
+    }
+    .social a:hover .heart{
+        animation: ex1 5s infinite;
+    }
+    .recruit a:hover .rec{
+        animation: ex1 5s infinite;
+    }
+    .thema_menu a:hover .smile{
+        animation: ex1 3s infinite;
+    }
+    @keyframes ex1{
+        0%{margin-top: 30px;}
+        50%{margin-top: 0px;}
+        100%{margin-top: 30px;}
+    }
+    /*마지막 섹션*/
+    .m_last .c_icon{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -80px;
+        left: 80px;
+    }
+    .m_last .recruit{
+        margin: 0 10px 0 0;
+        position: relative;
+    }
+    .m_last .recruit h2:hover{
+        text-decoration: underline;
+    }
+    .m_last .recruit img{
+        margin-left: 40px;
+    }
+    .recruit h2,.social h2{
+        position: absolute;
+        top: 220px;
+    }
+    .m_last .thema_menu{
+        position: relative;
+    }
+    .m_last p{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 300px;
+    }
+}
