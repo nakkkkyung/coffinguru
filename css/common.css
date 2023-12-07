@@ -39,6 +39,9 @@ width: 70%;
     font-size: 16px;
     margin: 0 10px 50px 0;
 }
+.f_nav>.info>dl>dt{
+    padding-bottom: 10px;
+}
 .f_bottom{
     width: 70%;
     font-size: 18px;
